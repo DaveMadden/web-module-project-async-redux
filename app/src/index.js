@@ -6,14 +6,20 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
+import { reducer } from './reducers/reducers';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const store = createStore(reducer);
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
