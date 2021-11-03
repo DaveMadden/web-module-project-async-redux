@@ -12,7 +12,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(logger, thunk));
 
 ReactDOM.render(
   <Provider store={store}>
