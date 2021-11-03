@@ -24,7 +24,7 @@ const Dog = (props) => {
 
 
     return (
-        <div>
+        <div className="dog">
             <img src={props.image} alt="random dog" />
             <button onClick={clickHandler}>see another dog!</button>
         </div>
