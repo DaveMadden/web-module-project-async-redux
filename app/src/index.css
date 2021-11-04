@@ -1,13 +1,50 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: #2c3e50;
+  color: #f39c12;
+  text-align: center;
+}
+.dog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fit-content;
+  margin: auto;
+  padding: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dog img {
+  max-width: 60%;
+  margin: auto;
+  border-left: 3px solid #95a5a6;
+  border-right: 3px solid #95a5a6;
+  border-top: 3px solid #95a5a6;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
 }
+
+.dog button {
+  width: 60%;
+  background: none;
+  outline: none;
+  border: none;
+  color: #ecf0f1;
+  padding: 10px;
+  cursor: pointer;
+  outline: 3px solid #95a5a6;
+  font-size: large;
+  transition: 0.25s;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dog button:hover {
+  background: #d35400;
+  color: white;
+  font-size: larger;
+  text-transform: uppercase;
+  transition: 0.25s;
+}
+
